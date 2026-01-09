@@ -37,6 +37,13 @@
                     <a href="#">Testimonial</a>
                     <a href="#">Categories</a>
                 </nav>
+
+                <button class="nav-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
             </header>
 
             <div class="hero">
@@ -144,6 +151,14 @@
         </section>
 
     </main>
+    <script>
+        const header = document.querySelector('.header');
+        const toggle = document.querySelector('.nav-toggle');
+
+        toggle.addEventListener('click', () => {
+            header.classList.toggle('active');
+        });
+    </script>
 
 </body>
 
